@@ -7,13 +7,8 @@ import WeatherBox from './components/WeatherBox';
 class App extends React.Component {
   state = {
     city: undefined,
-
-    // days contains objects with the following properties:
-    // date, weather_desc, icon, temp
     days: new Array(5)
   };
-
-  // creates the day objects and updates the state
   updateState = data => {
     const city = data.city.name;
     const days = [];
